@@ -2,7 +2,7 @@
   "name": "nft-frontend",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://catangent.github.io/elolsuskwebpage/",
+  "homepage": "https://catangent.github.io/elol-susk-nft/",
   "dependencies": {
     "@metamask/detect-provider": "^2.0.0",
     "@testing-library/jest-dom": "^5.16.5",
