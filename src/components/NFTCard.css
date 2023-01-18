@@ -7,10 +7,11 @@
     width: 18em;
     max-height: 18em;
 
-    margin: 1em;
     border-radius: 1em;
 
     overflow-y: scroll;
+    
+    text-align: center;
 }
 
 .NFTText{
