@@ -23,14 +23,14 @@ function MainPage() {
         const ethereum = await detectEthereumProvider();
         if(!ethereum){ // ethereum provider not found
             globalThis.provider = null
-            alert("pls install metamask"); // TODO: message box component for errors
+            alert("pls install metamask"); // TODO: msgbox component for errors
             return;
         }
         globalThis.provider = new ethers.providers.Web3Provider(ethereum, "any");
         const { chainId } = await globalThis.provider.getNetwork()
         if(chainId !== 5) { // goerli id = 5
             globalThis.provider = null;
-            alert("pls connect to Goerli testnet"); // TODO: message box component for errors
+            alert("pls connect to Goerli testnet"); // TODO: msgbox component for errors
             return;
         }
         await globalThis.provider.send("eth_requestAccounts", []); // get permission for an account
